@@ -1,0 +1,34 @@
+<template name='eventPage'>
+  {{curEventHelper}}
+  <h1 class="eventTitle">{{title}}<span>{{#if ownsEvent}}<a href="{{pathFor 'eventEdit'}}">*</a>{{/if}}</span></h1>
+  <h3 class="eventDescription">{{description}}</h3>
+  {{#if isInvitee}}
+  <h4 name="gList">Guest List:</h4>
+  <ol>
+  {{#each invitees}}
+      <li><span class="inviteeName">{{this}}</span></li>
+  {{/each}}
+  </ol>
+  <div>
+    {{#with this}}
+    <div>
+      <center>
+        <div class="newBlurbBox">
+          <input name ="newTitle" type="text" placeholder="Title">
+          <textarea name='newTexts' placeholder="what ya thinkin?"></textarea>
+        </div>
+      </center>
+      <button name='addText'>Add Text!</button>
+    </div>
+    <center>
+    <div name="fileUploader">
+      <input type="file" id="imgForUpload">
+      <input type="text" id="imgCaption">
+      <button id="iUpload">Upload Img</button>
+    </div>
+  </center>
+    {{/with}}
+  </div>
+  {{/if}}
+  {{>eventItem}}
+</template>

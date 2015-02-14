@@ -1,0 +1,242 @@
+/*font-family: 'Quicksand', sans-serif;
+font-family: 'Coustard', serif;*/
+
+body{
+}
+
+/*items*/
+a:link {
+  color: green;
+  text-decoration: none;
+}
+
+button {
+  background-color: #e5e5e5;
+  font-family: 'Quicksand', sans-serif;
+  border: none;
+  border-radius: 2px;
+  height: 25px;
+  width: 100px;
+}
+
+/*classes*/
+.narrationAuthor {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+.narrationList {
+  list-style-type: none;
+}
+
+.newBlurbBox {
+  width: 70%;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #e5e5e5;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.imgAuthor {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  display: block;
+  clear: both;
+}
+
+.imgCaption {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  display: block;
+  clear: both;
+}
+
+.blurbBox {
+  width: 30%;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #e5e5e5;
+  display: block;
+}
+
+.imgBox {
+  width: 40%;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #e5e5e5;
+  display: block;
+  margin-top: 10px;
+}
+
+.submitNarForBlurb {
+  display: block;
+  clear: both
+}
+
+.submitNarForImg {
+  display: block;
+  clear: both
+}
+.blurbAuthor {
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+  display: block;
+  clear: both
+}
+
+.blurbContent {
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  display: block;
+  padding: none;
+  clear: both
+}
+
+.narrationContent {
+  display: block;
+  clear: both;
+  font-family: 'Quicksand', sans-serif;
+}
+.narrationImg {
+  float: left;
+  clear: both;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: block;
+  clear: both;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.narrationBlurb {
+  float: left;
+  clear: both;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 5%;
+  display: block;
+  clear: both;
+  width: 90%;
+}
+.eImg {
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #e5e5e5;
+  border: 1px solid #e5e5e5;
+  display: block;
+  clear: both;
+}
+
+.site_title:link {
+  color: green;
+}
+.site_title {
+  font-family: 'Coustard', serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: black;
+  margin: auto;
+}
+
+.events {
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #e5e5e5;
+  border: 1px solid;
+  border-color: #e5e5e5;
+  width: 75%;
+}
+
+.eventTitle {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.eventDescription {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.newEField {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e5e5e5;
+  width: 300px;
+  height: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family:   font-family: 'Quicksand', sans-serif;
+}
+
+.submitForm {
+  margin-top: 10%;
+}
+
+.inviteeName {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*names*/
+[name=fileUploader] {
+  margin-top: 40px;
+}
+
+input[type=file] {
+
+}
+
+/*id's*/
+#logo {
+  margin: auto;
+  padding: 0;
+  top: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+#newEventPlus {
+  font-family: 'Coustard', serif;
+  font-size: 100px;
+  color: #e5e5e5;
+  margin: auto;
+}
+
+input[type=submit] {
+  margin-top: 10px;
+  background-color: green;
+  font-family:'Quicksand', sans-serif;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px;
+  height: 25px;
+  width: 100px;
+}
+
+textarea[name=newTexts] {
+  border-radius: 5px;
+  width: 600px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  display: block;
+  clear: both;
+}
+
+input[name=newTitle] {
+  border-radius: 5px;
+  width: 600px;
+  height: 70px;
+  display: block;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 50px;
+}
+
+button[name=addText] {
+  margin-left: 30%;
+}
+
+h4[name=gList] {
+  font-size: 30px;
+  font-family:'Quicksand', sans-serif;
+  margin-bottom: 5px;
+}

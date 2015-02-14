@@ -1,0 +1,12 @@
+<template name='eventsList'>
+  <center>{{#if currentUser}}<span style="margin-top: 5%"><a href="{{pathFor 'eventSubmit'}}" id="newEventPlus">+</a></span>{{/if}}</center>
+  <center>
+  <div class='events' style="margin-top: 5%">
+    {{#each events}}
+      <center>
+        <h1 class="eventTitle">{{title}}<span><a href="{{pathFor 'eventPage'}}"> ...</a></span></h1>
+      </center>
+    {{/each}}
+  </div>
+</center>
+</template>

@@ -1,0 +1,30 @@
+<template name="eventEdit">
+    {{#if isAuthor}}
+    <form>
+      <div>
+        <input name="edTitle" value="{{title}}">
+      </div>
+      <div>
+        <input name="edDescription" value="{{description}}">
+      </div>
+      <div>
+        {{curEventHelper}}
+        <ul>
+          {{inviteeHelper}}
+            {{#each invitees}}
+            <li>
+              <span class="iName">{{this}}</span>
+              <!-- <button id="removeInvitee">Remove</button> -->
+            </li>
+            {{/each}}
+        </ul>
+        <div>
+          <button name="addI">Add Invitee</button>
+          <input type="text" name="inviteeName" value="">
+        </div>
+      </div>
+      <button class='delete'>Delete</button>
+      <input type='submit' value='submit'>
+    </form>
+    {{/if}}
+</template>

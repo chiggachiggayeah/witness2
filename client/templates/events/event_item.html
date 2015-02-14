@@ -1,0 +1,46 @@
+<template name='eventItem'>
+  <a href="{{pathFor 'eventEdit'}}">Edit</a>
+  {{curEventHelper}}
+  <div>
+    <!-- {{#each blurbs}} -->
+      {{#each blurbs}}
+      <div class="blurbBox" style="margin-bottom: 10px;">
+        <span class="blurbAuthor">{{blurbAuthor}}</span>
+        <span class="blurbContent">{{content}}</span>
+        <ul class="narrationList">
+        {{#each narration}}
+            <li><span class="narrationAuthor">{{author}}: </span><span class="narrationContent">"{{content}}"</span></li>
+        {{/each}}
+        </ul>
+        {{#if isInvitee}}
+          <center>
+            <textarea class="narrationBlurb" placeholder="Narrate!"></textarea>
+          </center>
+          <button class="submitNarForBlurb">Submit Nar</button>
+        {{/if}}
+      </div>
+      {{/each}}
+    <!-- {{/each}} -->
+    <div>
+      {{#each images}}
+        <div class="imgBox">
+          <img class="eImg" src="{{url}}">
+          <span class="imgAuthor">{{imgAuthor}}</span>
+          <span class="imgCaption">{{caption}}</span>
+          <ul class="narrationList">
+            {{#each narration}}
+            <li><span class="narrationAuthor">{{author}}: </span><span class="narrationContent">"{{content}}"</span></li>
+            {{/each}}
+          </ul>
+          {{#if isInvitee}}
+            <textarea class="narrationImg" placeholder="Narrate!"></textarea>
+            <button class="submitNarForImg">Submit Nar</button>
+          {{/if}}
+        </div>
+      {{/each}}
+      <!-- {{#each texts}}
+        <span class='tContent'>{{this}}</span>
+      {{/each}} -->
+    </div>
+  </div>
+</template>

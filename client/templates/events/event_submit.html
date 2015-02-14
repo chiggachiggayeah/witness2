@@ -1,0 +1,32 @@
+<template name="eventSubmit">
+  <center>
+  <form class="submitForm">
+    <div>
+      <input class="newEField" type="text" name="title" value="" placeholder="Event Name!">
+    </div>
+    <div>
+      <!-- {{>search}} -->
+      <input class="newEField" type=text name="description" value="" placeholder="Describe Your Event">
+    </div>
+    {{eSubHelper}}
+    <div>
+      {{>search}}
+      <!-- {{>inputAutocomplete settings=settings id='nInvitee' placeholder="Who's Comin?"}} -->
+      <!-- <input type="text" name="newInvitee" value="" placeholder="Who's Comin'?" > -->
+      <ul>
+        {{#each newInvitees}}
+          <li>
+            {{this}}
+          </li>
+        {{/each}}
+      </ul>
+      {{#if userNotFound}}
+        <span>Couldn't Find That User</span>
+      {{/if}}
+      <button id="addInvitee">Add Invitee!</button>
+    </div>
+    <!-- <button name='callT'>Call Twitter!</button> -->
+    <input type="submit" value="Submit">
+  </form>
+  </center>
+</template>
